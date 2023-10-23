@@ -1,0 +1,20 @@
+MAKE UP ARTIST WEBSITE CUSTOMERS' POV
+
+=> ARTISTS' PORTFOLIO
+=> MAKE-UP SERVICES => SERVICES => => ARTIST'S SESSIONS
+=> BOOKING => DETAIL BILL - Name_customer
+			  - Number_services_(sessions)
+			  - Tel_customer
+			  - Location_customer 
+			  - Datetime
+
+
+SƠ ĐỒ HÀNH VI KHÁCH HÀNG KHI VÀO TRANG WEB TRANG ĐIỂM
+
+=> MỘT SỐ HỒ SƠ CÁC NGHỆ NHÂN (SẮP XẾP THEO LƯỢT VIEW) Ở TRANG CHỦ => MỘT SỐ TÁC PHẨM (PHONG CÁCH) TRANG ĐIỂM Ở TRANG CHỦ (SẮP XẾP THEO LƯỢT VIEW)
+=> CÁC DANH MỤC TRANG ĐIỂM => CÁC DỊCH VỤ (THEO GIÁ CẢ) => CÁC TÁC PHẨM(PHONG CÁCH) TRANG ĐIỂM CỦA NGHỆ NHÂN
+=> ĐẶT MỘT LỊCH TRÌNH TRANG ĐIỂM => CHI TIẾT HÓA ĐƠN BAO GỒM: - TÊN KHÁCH HÀNG
+							      - SỐ LƯỢNG DỊCH VỤ MÀ KHÁCH HÀNG MUỐN
+							      - SĐT KHÁCH HÀNG
+							      - ĐỊA CHỈ NHÀ KHÁCH HÀNG
+							      - NGÀY GIỜ ĐẶT LỊCH
