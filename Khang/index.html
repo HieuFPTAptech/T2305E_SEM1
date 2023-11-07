@@ -13,41 +13,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
     <script src="https://kit.fontawesome.com/ef1f62a6b0.js" crossorigin="anonymous"></script>
-    <title>Document</title>
-
-    <div class="navbar">
-      <ul class="menu">
-        <!-- <li class="mainLogo">
-          <a href="#">
-            <img src="./img/logo.png" alt="Your logo">
-          </a>
-        </li> -->
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about">About</a></li>
-        <li class="mainLogo">
-          <a href="#">
-            <img src="./img/logo.png" alt="Your logo">
-          </a>
-        </li>
-        <li><a href="#testimonials">Feedback</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Booking <span class="arrow-down">▼</span></a>
-          <div class="dropdown-content">
-            <a href="#bridal-makeup">Bridal Makeup</a>
-            <a href="#groom-makeup">Groom Makeup</a>
-            <a href="#family-makeup">Family Makeup</a>
-            <a href="#touch-up">Touchup Services</a>
-            <a href="#siders-makeup">Siders Makeup</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-    
+    <title>Home</title>
 </head>
 <body>
+  <div class="navbar">
+    <ul class="menu">
+      <!-- <li class="mainLogo">
+        <a href="#">
+          <img src="./img/logo.png" alt="Your logo">
+        </a>
+      </li> -->
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li class="mainLogo">
+        <a href="#">
+          <img src="./img/logo.png" alt="Your logo">
+        </a>
+      </li>
+      <li><a href="#testimonials">Feedback</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Booking <span class="arrow-down">▼</span></a>
+        <div class="dropdown-content">
+          <a class="dropdown-item" href="booking.html">Bridal Makeup</a>
+          <a class="dropdown-item" href="booking.html">Groom Makeup</a>
+          <a class="dropdown-item" href="booking.html">Family Makeup</a>
+          <a class="dropdown-item" href="booking.html">Touchup Services</a>
+          <a class="dropdown-item" href="booking.html">Siders Makeup</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
       <section class="section1" id="home">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -115,6 +115,7 @@
                       <img src="./img/artist/2.png" alt="Portfolio Item 1">
                       <div class="loading-effect"></div>
                   </div>
+                  <div class="artist-name">Artist Name</div>
               </div>
               <div class="portfolio-item">
                   <div class="image-container">
@@ -122,6 +123,7 @@
                       <img src="./img/artist/1.png" alt="Portfolio Item 2">
                       <div class="loading-effect"></div>
                   </div>
+                  <div class="artist-name">Artist Name</div>
               </div>
               <div class="portfolio-item">
                   <div class="image-container">
@@ -129,7 +131,9 @@
                       <img src="./img/artist/3.png" alt="Portfolio Item 3">
                       <div class="loading-effect"></div>
                   </div>
+                  <div class="artist-name">Artist Name</div>
               </div>
+              <div class="artist-name">Artist Name</div>
           </div>
           <div class="portfolio-row">
               <div class="portfolio-item">
@@ -138,6 +142,7 @@
                       <img src="./img/artist/4.png" alt="Portfolio Item 4">
                       <div class="loading-effect"></div>
                   </div>
+                  <div class="artist-name">Artist Name</div>
               </div>
               <div class="portfolio-item">
                   <div class="image-container">
@@ -145,6 +150,7 @@
                       <img src="./img/artist/7.png" alt="Portfolio Item 5">
                       <div class="loading-effect"></div>
                   </div>
+                  <div class="artist-name">Artist Name</div>
               </div>
               <div class="portfolio-item">
                   <div class="image-container">
@@ -152,48 +158,71 @@
                       <img src="./img/artist/6.png" alt="Portfolio Item 6">
                       <div class="loading-effect"></div>
                   </div>
+                  <div class="artist-name">Artist Name</div>
               </div>
           </div>
       </div>
   </section>
   
+  <div id="artistModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <header>
+          <div class="avatar">
+            <img src="./img/artist/1.png" alt="Artist img">
+          </div>
+          <div class="info">
+            <div class="info-header">
+              <h2>Aritst name</h2>
+              <button class="see-artists" ><a href="artists.html" style="text-decoration: none; color: white;">SEE ALL ARTISTS</a></button>
+            </div>
+            <div class="info-number">
+              <article class="number">
+                <h3>999</h3>
+                <p>Years in experience</p>
+              </article>
+              <article class="number">
+                <h3>999</h3>
+                <p>Sucessfull sessions</p>
+              </article>
+              <article class="number">
+                <h3>5.0</h3>
+                <p>Ratings</p>
+              </article>
+            </div>
+            <div class="description">
+              <h3>Service offer:</h3>
+              <ul>
+                <li>Wedding Makeup Package</li>
+                <li>Special Occasion Glam</li>
+                <li>Makeup Lessons</li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <div class="sample-work">
+          <div class="sample-title">
+            <h5>SAMPLE WORK</h5>
+          </div>
+          <div class="sample-content">
+            <img src="img/artist/1.png" alt="">
+            <img src="img/artist/1.png" alt="">
+            <img src="img/artist/1.png" alt="">
+            <img src="img/artist/1.png" alt="">
+            <img src="img/artist/1.png" alt="">
+            <img src="img/artist/1.png" alt="">
+          </div>
+        </div>
+    </div>
+</div>
+
     <section class="section4" id="about">
       <h2><strong>A B O U T</strong></h2>
-      <p>At HAZEL, we believe that beauty is an art form, and every face is a canvas waiting to be transformed. With a passion for makeup and a commitment to enhancing your natural beauty, our team of talented makeup artists is dedicated to making you look and feel your absolute best. Whether you're preparing for a special occasion, a photoshoot, or just want to treat yourself to a little extra glam, we're here to make your vision a reality. Our expertise, attention to detail, and use of high-quality products ensure that you leave our chairs radiating with confidence.</p>
+      <p>"At HAZEL, we believe that beauty is an art form, and every face is a canvas waiting to be transformed. With a passion for makeup and a commitment to enhancing your natural beauty, our team of talented makeup artists is dedicated to making you look and feel your absolute best. Whether you're preparing for a special occasion, a photoshoot, or just want to treat yourself to a little extra glam, we're here to make your vision a reality. Our expertise, attention to detail, and use of high-quality products ensure that you leave our chairs radiating with confidence..."</p>
+      <a href="about.html" class="read-more-button">READ MORE</a>
       <img src="./img/about.png" alt="">
     </section>
     
-    <!-- <section class="section5" id="testimonials">
-      <div class="testimonial">
-        <div class="testimonial-author">
-            <img src="testimonial-author-image.jpg" alt="Author Name">
-            <p>Author Name</p>
-        </div>
-        <p class="testimonial-text">"I had an amazing experience with HAZEL. Their makeup artists are truly talented and made me feel like a star. I couldn't be happier with the results!"</p>
-    </div>
-    <div class="testimonial">
-        <div class="testimonial-author">
-            <img src="testimonial-author-image.jpg" alt="Another Author">
-            <p>Another Author</p>
-        </div>
-        <p class="testimonial-text">"HAZEL's team is fantastic. They exceeded my expectations and gave me a look that perfectly matched my style. I highly recommend their services!"</p>
-    </div>
-    <div class="testimonial">
-      <p class="testimonial-text">"The experience with HAZEL was outstanding. They made me look and feel incredible for my special day. I can't thank them enough!"</p>
-      <div class="testimonial-author">
-          <img src="testimonial-author-image.jpg" alt="Testimonial Author 3">
-          <p>Testimonial Author 3</p>
-      </div>
-  </div>
-  <div class="testimonial">
-      <p class="testimonial-text">"I was amazed by the talent and artistry of HAZEL's makeup artists. They turned my vision into reality. I'm a delighted customer!"</p>
-      <div class="testimonial-author">
-          <img src="testimonial-author-image.jpg" alt="Testimonial Author 4">
-          <p>Testimonial Author 4</p>
-      </div>
-  </div>
-    </section> -->
-
       <section class="section5" id="testimonials">
         <h2><strong>T E S T I M O N I A L S</strong></h2>
         <div class="feedback-container">
@@ -233,9 +262,7 @@
         <p>If you have any questions or inquiries, please feel free to reach out to us. We're here to help!</p>
       </div>
       <div class="contact-content">
-        <div class="map">
-
-        </div>
+        <div class="map" id="map"></div>
         <div class="contact-form">
           <form action="#" method="post">
             <div class="row1">
@@ -274,7 +301,7 @@
           </form>
         </div>
       </div>
-      <div class="contact-footer">
+      <div class="footer">
         <div class="contact-info">
             <h3>Contact Information</h3>
             <p><strong>Address:</strong> 123 Main Street, City, Country</p>
@@ -283,6 +310,73 @@
         </div>
     </div>
     </section>
-</body>
 
+    <script>
+
+    //Half parallax effect for section 2
+    const section2 = document.getElementById('services');
+    function addParallaxEffect() {
+      section2.style.backgroundAttachment = 'fixed';
+      section2.style.backgroundPosition = 'center';
+    }
+
+    function removeParallaxEffect() {
+      section2.style.backgroundAttachment = 'scroll';
+      section2.style.backgroundPosition = 'center';
+    }
+
+    window.addEventListener('scroll', () => {
+        const section1 = document.getElementById('home');
+        const section3 = document.getElementById('portfolio');
+
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition >= section1.offsetTop && scrollPosition < section2.offsetTop) {
+          addParallaxEffect();
+        } else {
+          removeParallaxEffect();
+        }
+
+        if (scrollPosition >= section2.offsetTop  && scrollPosition < section3.offsetTop) {
+          removeParallaxEffect();
+        }
+    });
+
+
+    // Modal function for section 3
+    document.addEventListener("DOMContentLoaded", function () {
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    const modal = document.getElementById('artistModal');
+    const closeBtn = document.querySelector('.close');
+
+    portfolioItems.forEach(item => {
+        item.addEventListener('click', () => {
+            modal.style.display = 'block';
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+          }
+       });
+    });
+
+    //map
+    let map;
+    async function initMap() {
+      const { Map } = await google.maps.importLibrary("maps");
+      map = new Map(document.getElementById("map"), {
+        center: { lat: 21.028380, lng: 105.781330 },
+        zoom: 17,
+      });
+    }
+    initMap();
+    </script>
+
+</body>
 </html>
