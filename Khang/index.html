@@ -88,6 +88,8 @@
       <section class="section2" id="services">
        <div class="content-container">
         <h1><strong>S E R V I C E S</strong></h1>
+        <br>
+        <a href="booking.html" class="see-all-button">SEE ALL</a>
         <div class="service-container">
             <div class="service">
                 <h3><strong>Bridal Makeup</strong></h3>
@@ -311,6 +313,14 @@
     </div>
     </section>
 
+    <button
+        type="button"
+        class="btn btn-secondary btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+  <i class="fas fa-arrow-up"></i>
+</button>
+
     <script>
 
     //Half parallax effect for section 2
@@ -376,6 +386,29 @@
       });
     }
     initMap();
+
+    //button
+      let mybutton = document.getElementById("btn-back-to-top");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
 
 </body>

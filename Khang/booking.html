@@ -88,15 +88,15 @@
           </div>
           <div class="col" id="text">
            <div class="row row-cols-auto">
-            <div class="col"><h3 style="font-size: 22px;"><strong>Service name</strong></h3></div>
-            <div class="col"><span class="badge text-bg-danger" style="font-size: 20px;">Sale 30%</span></div>
+            <div class="col"><h3 style="font-size: 18px;"><strong>Service name</strong></h3></div>
+            <div class="col"><span class="badge text-bg-danger" style="font-size: 18px;">Sale 30%</span></div>
            </div>
            <div class="row"><h4 style="text-align: justify;"><strong>Price: </strong>$4000</h4></div>
            <div class="row">
-            <p style="text-align: justify; font-size: 22px;"><strong>Details: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum nunc, vel venenatis nunc. Fusce nec est non odio ultricies ullamcorper. Curabitur dictum metus eget tortor elementum, a dictum neque euismod. Nullam at purus at arcu auctor gravida id id ligula. In hac habitasse platea dictumst. Sed eleifend lorem vel luctus. Morbi eu malesuada eros. Sed id tortor tincidunt, eleifend mauris ac, bibendum libero. Aenean bibendum vel libero eget lacinia. Sed cursus, risus non hendrerit tincidunt, elit odio rhoncus urna, nec euismod ex odio eget libero. Vivamus id est purus.</p>
+            <p style="text-align: justify; font-size: 18px;"><strong>Details: </strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget fermentum nunc, vel venenatis nunc. Fusce nec est non odio ultricies ullamcorper. Curabitur dictum metus eget tortor elementum, a dictum neque euismod. Nullam at purus at arcu auctor gravida id id ligula. In hac habitasse platea dictumst. Sed eleifend lorem vel luctus. Morbi eu malesuada eros. Sed id tortor tincidunt, eleifend mauris ac, bibendum libero. Aenean bibendum vel libero eget lacinia. Sed cursus, risus non hendrerit tincidunt, elit odio rhoncus urna, nec euismod ex odio eget libero. Vivamus id est purus.</p>
            </div>
-           <div class="row" style="text-align: justify;"><h4><strong>Style: </strong>Style, style, style</h4></div>
-           <div class="row" style="text-align: justify;"><h4><strong>Artist: </strong>Name, name, name</h4></div>
+           <div class="row" style="text-align: justify; font-size: 18px"><p><strong>Style: </strong>Style, style, style</p></div>
+           <div class="row" style="text-align: justify; font-size: 18px"><p><strong>Artist: </strong>Name, name, name</p`></div>
           </div>
         </div>
       </div>
@@ -109,7 +109,7 @@
             <div class="contact-content">
               <div class="map" id="map"></div>
               <div class="contact-form">
-                <form action="#" method="post">
+                <form action="#" method="post" id="bookingForm">
                   <div class="row1">
                     <div class="contact-input">
                       <input type="text" name="name" id="name" placeholder="Name" required>
@@ -194,8 +194,17 @@
                         <textarea name="Note" id="note" cols="50" rows="5" placeholder="Note"></textarea>
                       </div>
                     </div>
+                    <div class="contact-input">
+                      <p style="max-width: 650px; font-size: 14px; text-align: justify;">(For your convenience, we require a 50% advance payment, with the remaining balance due upon completion of the service.  Your payment method details will be included in the confirmation email.)</p>
+                    </div>
+                    <div class="contact-input">
+                      <label for="term" style="font-size: 14px; text-align: center;">
+                        <input type="checkbox" id="term" value="term" class="checkbox-parent">
+                        By clicking here, I state that I have read and understood the <a href="" style="color: #E6B8A2;">Terms and Conditions.</a>
+                      </label>
+                    </div>
                   <div class="row4">
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">C O N F I R M</button>
+                    <button type="submit" id="confirmButton" data-bs-toggle="modal" data-bs-target="#exampleModal" disabled>C O N F I R M</button>
                   </div>
                 </form>
 
@@ -298,6 +307,19 @@
               $('.checkbox-child2').prop('disabled', true);
             }
           });
+
+          $('#term').change(function() {
+      const confirmButton = $('#confirmButton');
+      if (this.checked) {
+        confirmButton.prop('disabled', false); // Enable the button
+      } else {
+        confirmButton.prop('disabled', true); // Disable the button
+      }
+    });
+
+    if (!$('#term').is(':checked')) {
+      $('#confirmButton').prop('disabled', true);
+    }
         });
           </script>
 </body>

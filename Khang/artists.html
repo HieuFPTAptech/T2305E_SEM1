@@ -46,16 +46,12 @@
       <div class="main">
         <div class="container">
             <form class="d-flex" role="search">
-                <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Search for artist"
-                    aria-label="Search"
-                />
-
-                <button class="btn btn-outline-success" type="submit">
-                    Search
-                </button>
+                <div class="input-group rounded">
+                    <input type="search" class="form-control rounded" placeholder="Search for Artist" aria-label="Search" aria-describedby="search-addon" />
+                    <span id="search-addon">
+                        <button id="search-button" type="button" class="btn btn-secondary"><i class="fas fa-search"></i></button>
+                    </span>
+                  </div>
             </form>
 
             <div class="row">
@@ -588,7 +584,6 @@
       </div>
   </div>
   
-
     <h1>
         Choose your favourite artist.
         <br />Makeup yourself - makeup your mind
@@ -608,8 +603,14 @@
         </div>
     </div>
 
-</section>
-
+            <button
+            type="button"
+            class="btn btn-secondary btn-floating btn-lg"
+            id="btn-back-to-top"
+            >
+            <i class="fas fa-arrow-up"></i>
+            </button>
+        </section>
     </section>
 
   
@@ -651,6 +652,28 @@ document.addEventListener("DOMContentLoaded", function () {
        });
     });
 
+    //button
+    let mybutton = document.getElementById("btn-back-to-top");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
 
 </script>
 </body>
