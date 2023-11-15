@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="theme-color" content="#E6B8A2" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+            integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/css/style.css" />
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
+            async
+            defer
+        ></script>
+        <script
+            src="https://kit.fontawesome.com/ef1f62a6b0.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Home</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <ul class="menu">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="mainLogo">
+                    <a href="/">
+                        <img src="./img/logo.png" alt="Your logo" />
+                    </a>
+                </li>
+                <li><a href="#testimonials">Feedback</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn"
+                        >Booking <span class="arrow-down">▼</span></a
+                    >
+                    <div class="dropdown-content"></div>
+                </li>
+            </ul>
+        </div>
+
+        <section class="section1" id="home">
+            <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-indicators">
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="3"
+                        aria-label="Slide 4"
+                    ></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            src="./img/sale.png"
+                            class="d-block w-100"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="./img/1.png"
+                            class="d-block w-100"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="./img/2.png"
+                            class="d-block w-100"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="./img/3.png"
+                            class="d-block w-100"
+                            alt="..."
+                        />
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="logo">
+                <img src="./img/logo-black.png" alt="" />
+                <h3><strong>MAKEUP ARTIST</strong></h3>
+            </div>
+        </section>
+
+        <section class="section2" id="services">
+            <div class="content-container">
+                <h1><strong>S E R V I C E S</strong></h1>
+                <br />
+                <a href="/booking" class="see-all-button">SEE ALL</a>
+                <div class="service-container">
+                    <div class="service">
+                        <h3><strong>Bridal Makeup</strong></h3>
+                        <p>
+                            Elevate your wedding day with our expert bridal
+                            makeup services. Our skilled makeup artists will
+                            work closely with you to create a timeless and
+                            radiant bridal look that complements your style and
+                            enhances your natural beauty. We understand the
+                            importance of this special day and are committed to
+                            making you feel your most beautiful as you say "I
+                            do."
+                        </p>
+                    </div>
+                    <div class="service">
+                        <h3><strong>Special Occasion Makeup</strong></h3>
+                        <p>
+                            For those unforgettable moments and special events,
+                            our special occasion makeup services are tailored to
+                            make you stand out. Whether it's a glamorous party,
+                            an anniversary celebration, or a photoshoot, our
+                            makeup artists will design a look that's uniquely
+                            suited to the occasion, ensuring you look and feel
+                            exceptional.
+                        </p>
+                    </div>
+                    <div class="service">
+                        <h3><strong>Makeup Workshops</strong></h3>
+                        <p>
+                            Discover the secrets of professional makeup with our
+                            engaging makeup workshops. Ideal for makeup
+                            enthusiasts of all skill levels, our workshops
+                            provide hands-on training in makeup techniques,
+                            product knowledge, and personalized tips. Learn how
+                            to master your makeup routine and achieve the looks
+                            you've always admired. It's an opportunity to
+                            unleash your inner makeup artist.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section3" id="portfolio">
+            <h2>A R T I S T S</h2>
+            <div class="portfolio-grid"></div>
+        </section>
+
+        <div id="artistModal" class="modal"></div>
+
+        <section class="section4" id="about">
+            <h2><strong>A B O U T</strong></h2>
+            <p>
+                "At HAZEL, we believe that beauty is an art form, and every face
+                is a canvas waiting to be transformed. With a passion for makeup
+                and a commitment to enhancing your natural beauty, our team of
+                talented makeup artists is dedicated to making you look and feel
+                your absolute best. Whether you're preparing for a special
+                occasion, a photoshoot, or just want to treat yourself to a
+                little extra glam, we're here to make your vision a reality. Our
+                expertise, attention to detail, and use of high-quality products
+                ensure that you leave our chairs radiating with confidence..."
+            </p>
+            <a href="/about" class="read-more-button">READ MORE</a>
+            <img src="./img/about.png" alt="" />
+        </section>
+
+        <section class="section5" id="testimonials">
+            <h2><strong>T E S T I M O N I A L S</strong></h2>
+            <div class="feedback-container">
+                <figure class="feedback">
+                    <figcaption>
+                        <blockquote>
+                            <p>
+                                I had an amazing experience with HAZEL. Their
+                                makeup artists are truly talented and made me
+                                feel like a star. I couldn't be happier with the
+                                results!
+                            </p>
+                            <h3><strong>Emma Watson</strong></h3>
+                            <h4></h4>
+                        </blockquote>
+                    </figcaption>
+                </figure>
+                <figure class="feedback">
+                    <figcaption>
+                        <blockquote>
+                            <p>
+                                The experience with HAZEL was outstanding. They
+                                made me look and feel incredible for my special
+                                day. I can't thank them enough!
+                            </p>
+                            <h3><strong>Emma Watson</strong></h3>
+                            <h4></h4>
+                        </blockquote>
+                    </figcaption>
+                </figure>
+                <figure class="feedback">
+                    <figcaption>
+                        <blockquote>
+                            <p>
+                                I was amazed by the talent and artistry of
+                                HAZEL's makeup artists. They turned my vision
+                                into reality. I'm a delighted customer!
+                            </p>
+                            <h3><strong>Emma Watson</strong></h3>
+                            <h4></h4>
+                        </blockquote>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section6" id="contact">
+            <div class="contact-header">
+                <h2>C O N T A C T</h2>
+                <p>
+                    If you have any questions or inquiries, please feel free to
+                    reach out to us. We're here to help!
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="map" id="map"></div>
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <div class="row1">
+                            <div class="contact-input">
+                                <!-- <label for="department">Select Department</label> -->
+                                <select
+                                    name="department"
+                                    id="department"
+                                    required
+                                >
+                                    <option value="" disabled selected>
+                                        Select Department
+                                    </option>
+                                    <option value="city1">Hanoi</option>
+                                    <option value="city2">Danang</option>
+                                    <option value="city3">
+                                        Ho Chi Minh City
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="contact-input">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    placeholder="Name"
+                                    required
+                                />
+                            </div>
+                            <div class="contact-input">
+                                <input
+                                    type="tel"
+                                    name="tel"
+                                    id="tel"
+                                    placeholder="Phone"
+                                />
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <div class="contact-input">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="date"
+                                    placeholder="Email"
+                                    required
+                                />
+                            </div>
+                            <div class="contact-input">
+                                <input
+                                    type="date"
+                                    name="date"
+                                    id="date"
+                                    placeholder="Date"
+                                />
+                            </div>
+                        </div>
+                        <div class="row3">
+                            <div class="contact-input">
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    cols="30"
+                                    rows="10"
+                                    placeholder="Message"
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div class="row4">
+                            <button>MAKE AN APPOINTMENT</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>
+                        <strong>Address:</strong> 123 Main Street, City, Country
+                    </p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                    <p><strong>Email:</strong> info@example.com</p>
+                </div>
+            </div>
+        </section>
+
+        <button
+            type="button"
+            class="btn btn-secondary btn-floating btn-lg"
+            id="btn-back-to-top"
+        >
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <script>
+            // Dropdown menu
+            async function fetchData() {
+                const response = await fetch('/api/name_makeup_service');
+                const data = await response.json();
+                const dropdownContent =
+                    document.querySelector('.dropdown-content');
+                data.forEach((item) => {
+                    const a = document.createElement('a');
+                    a.classList.add('dropdown-item');
+                    a.href = `/booking`;
+                    a.innerText = item.name_makeup_service;
+                    dropdownContent.appendChild(a);
+                });
+            }
+
+            fetchData();
+
+            // Portfolio
+            async function fetchDataNameArtistImg() {
+                const response = await fetch('/api/name_artist_img');
+                const data = await response.json();
+
+                const portfolioGrid = document.querySelector('.portfolio-grid');
+                let itemCount = 0; // Counter for tracking the number of items added
+
+                for (let i = 0; i < data.length; i++) {
+                    if (itemCount >= 6) {
+                        // Break the loop if 6 items are already added (2 rows * 3 columns)
+                        break;
+                    }
+
+                    const item = data[i];
+
+                    const portfolioItem = document.createElement('div');
+                    portfolioItem.classList.add('portfolio-item');
+
+                    const imageContainer = document.createElement('div');
+                    imageContainer.classList.add('image-container');
+
+                    const overlay = document.createElement('div');
+                    overlay.classList.add('overlay');
+
+                    const img = document.createElement('img');
+                    img.src = `/img/artist/${item.img_artist}`;
+                    img.alt = 'Portfolio Item';
+
+                    const loadingEffect = document.createElement('div');
+                    loadingEffect.classList.add('loading-effect');
+
+                    const artistName = document.createElement('div');
+                    artistName.classList.add('artist-name');
+                    artistName.innerText = item.name_artist;
+
+                    portfolioItem.appendChild(imageContainer);
+                    imageContainer.appendChild(overlay);
+                    imageContainer.appendChild(img);
+                    imageContainer.appendChild(loadingEffect);
+                    portfolioItem.appendChild(artistName);
+
+                    portfolioItem.addEventListener('click', () => {
+                        displayArtistModal(item);
+                    });
+
+                    // Check if a new row needs to be created
+                    if (itemCount % 3 === 0) {
+                        const portfolioRow = document.createElement('div');
+                        portfolioRow.classList.add('portfolio-row');
+                        portfolioGrid.appendChild(portfolioRow);
+                    }
+
+                    const portfolioRow = portfolioGrid.lastElementChild;
+                    portfolioRow.appendChild(portfolioItem);
+
+                    itemCount++;
+                }
+            }
+
+            async function displayArtistModal(item) {
+                const modal = document.getElementById('artistModal');
+                modal.style.display = 'block';
+
+                const response = await fetch('/api/id_artist');
+                const data = await response.json();
+
+                const resArtists = await fetch('/artists/api/getAll');
+                const artists = await resArtists.json();
+
+                const artistsInfo = artists.map((artist) => {
+                    if (artist.id_artist === item.id_artist) {
+                        return (info = artist);
+                    }
+                });
+
+                const imgSampleWork = data
+                    .filter((sample) => sample.id_artist === item.id_artist)
+                    .map((sample) => {
+                        return `
+                            <img src="/img/sample/${sample.img_sample_work}" alt="" />
+                        `;
+                    })
+                    .join('');
+
+                const html = `
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <header>
+                            <div class="avatar">
+                                <img src="./img/artist/${item.img_artist}" alt="Artist img" />
+                            </div>
+                            <div class="info">
+                                <div class="info-header">
+                                    <h2>${item.name_artist}</h2>
+                                    <button class="see-artists">
+                                        <a
+                                            href="/artists"
+                                            style="text-decoration: none; color: white"
+                                            >SEE ALL ARTISTS</a
+                                        >
+                                    </button>
+                                </div>
+                                <div class="info-number">
+                                    <article class="number">
+                                        <h3>${info.yearExp_artist}</h3>
+                                        <p>Years in experience</p>
+                                    </article>
+                                    <article class="number">
+                                        <h3>${info.session_artist}</h3>
+                                        <p>Sucessfull sessions</p>
+                                    </article>
+                                    <article class="number">
+                                        <h3>${info.rating_artist}</h3>
+                                        <p>Ratings</p>
+                                    </article>
+                                </div>
+                                <div class="description">
+                                    <h3>Service offer:</h3>
+                                    <ul>
+                                        <li>Wedding Makeup Package</li>
+                                        <li>Special Occasion Glam</li>
+                                        <li>Makeup Lessons</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="sample-work">
+                            <div class="sample-title">
+                                <h5>SAMPLE WORK</h5>
+                            </div>
+                            <div class="sample-content">
+                                ${imgSampleWork}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                modal.innerHTML = html;
+
+                const closeBtn = document.querySelector('.close');
+                closeBtn.addEventListener('click', () => {
+                    modal.style.display = 'none';
+                });
+
+                window.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        modal.style.display = 'none';
+                    }
+                });
+            }
+
+            fetchDataNameArtistImg();
+
+            // Parallax effect
+            const section1 = document.getElementById('home');
+            function addParallaxEffect() {
+                section1.style.backgroundAttachment = 'fixed';
+                section1.style.backgroundPosition = 'center';
+            }
+
+            function removeParallaxEffect() {
+                section1.style.backgroundAttachment = 'scroll';
+                section1.style.backgroundPosition = 'center';
+            }
+
+            window.addEventListener('scroll', () => {
+                const section2 = document.getElementById('services');
+                const section3 = document.getElementById('portfolio');
+
+                const scrollPosition = window.scrollY;
+
+                if (
+                    scrollPosition >= section1.offsetTop &&
+                    scrollPosition < section2.offsetTop
+                ) {
+                    addParallaxEffect();
+                } else {
+                    removeParallaxEffect();
+                }
+
+                if (
+                    scrollPosition >= section2.offsetTop &&
+                    scrollPosition < section3.offsetTop
+                ) {
+                    removeParallaxEffect();
+                }
+            });
+
+            const section2 = document.getElementById('services');
+            function addParallaxEffect() {
+                section2.style.backgroundAttachment = 'fixed';
+                section2.style.backgroundPosition = 'center';
+            }
+
+            function removeParallaxEffect() {
+                section2.style.backgroundAttachment = 'scroll';
+                section2.style.backgroundPosition = 'center';
+            }
+
+            window.addEventListener('scroll', () => {
+                const section1 = document.getElementById('home');
+                const section3 = document.getElementById('portfolio');
+
+                const scrollPosition = window.scrollY;
+
+                if (
+                    scrollPosition >= section1.offsetTop &&
+                    scrollPosition < section2.offsetTop
+                ) {
+                    addParallaxEffect();
+                } else {
+                    removeParallaxEffect();
+                }
+
+                if (
+                    scrollPosition >= section2.offsetTop &&
+                    scrollPosition < section3.offsetTop
+                ) {
+                    removeParallaxEffect();
+                }
+            });
+
+            //map
+            let map;
+            async function initMap() {
+                const { Map } = await google.maps.importLibrary('maps');
+                map = new Map(document.getElementById('map'), {
+                    center: { lat: 21.02838, lng: 105.78133 },
+                    zoom: 17,
+                });
+            }
+            initMap();
+
+            //button
+            let mybutton = document.getElementById('btn-back-to-top');
+            window.onscroll = function () {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                if (
+                    document.body.scrollTop > 20 ||
+                    document.documentElement.scrollTop > 20
+                ) {
+                    mybutton.style.display = 'block';
+                } else {
+                    mybutton.style.display = 'none';
+                }
+            }
+            mybutton.addEventListener('click', backToTop);
+
+            function backToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </body>
+</html>
